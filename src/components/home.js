@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.css';
-import Typical from 'react-typical';
+import { Typewriter } from 'react-simple-typewriter';
 import { Link } from 'react-scroll';
 
 const Home = (props) => {
@@ -27,19 +27,22 @@ const Home = (props) => {
                                 Hello I'm <span className='h1span' >JALAL AHMAD</span>
                             </h2>
                             <h4 className='developerh4' style={{ color: '#343a40' }}>
-                                <Typical
-                                    loop={Infinity}
-                                    steps={[
-                                        "Web Developer ",
-                                        2000,
-                                        "Frontend  Developer",
-                                        2000,
-                                        "React Developer",
-                                        2000,
-                                        "Java Script Developer",
-                                        2000,
-                                    ]}
-                                />
+                                <span>
+                                    <Typewriter
+                                        words={[
+                                            "Web Developer",
+                                            "Frontend Developer",
+                                            "React Developer",
+                                            "JavaScript Developer"
+                                        ]}
+                                        loop={0}
+                                        cursor
+                                        cursorStyle='|'
+                                        typeSpeed={70}
+                                        deleteSpeed={50}
+                                        delaySpeed={1500}
+                                    />
+                                </span>
                             </h4>
                         </div>
 
