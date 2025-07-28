@@ -5,7 +5,6 @@ import About from './components/about';
 import Resume from './components/resume';
 import Contact from './components/contact';
 import Footer from './components/footer';
-import Hatbot from './components/chatbot';
 
 
 
@@ -24,7 +23,7 @@ function App() {
       <Contact fn = {remove}/>
       <Footer fn = {remove}/>
       
-      {/* <Hatbot/> */}
+      {/* Chatbot removed: If needed, add a compatible chatbot component here. */}
     </>
   );
 }
