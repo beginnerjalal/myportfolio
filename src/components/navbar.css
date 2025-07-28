@@ -1,0 +1,164 @@
+.H1name{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+    font-weight: 600;
+    
+}
+ul{
+    font-weight: 600;
+    color: #343a40;
+}
+
+.active{
+    color: #343a40;
+}
+li:hover{
+    color: white;
+}
+
+.sidebarmain{
+    /* background-color: #e3dc08; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid black;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    z-index: 2;
+
+    background-image: url(../../public/images/main-bg.png);
+    background-color: #cccccc;
+    background-size: cover;
+   
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.brandname{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 9%;
+    cursor: pointer;
+}
+
+.list{
+    width: 50%;
+}
+.list li {
+    cursor: pointer;
+}
+.listul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0px;
+}
+.listmenu{
+    margin: 15px 15px;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 768px){
+    .brandname{
+        padding-left: 0%;
+        width: 30%;
+    }
+    .list{
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 430px){
+    .sidebarmain{
+        flex-direction: column !important;
+    }
+
+    .brandname {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 0%;
+        cursor: pointer;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
+    .list{
+        width: 100%;
+    }
+    .listmenu {
+        margin: 5px 15px;
+    }
+   
+}
+
+@media only screen and (min-width: 370px) {
+    .sidebarmain ul{
+        padding-left: 0px;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 315px) and (max-width: 330px){
+    .sidebarmain{
+        flex-direction: column !important;
+    }
+
+    .brandname {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 0%;
+        cursor: pointer;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
+    .list{
+        width: 100%;
+    }
+    .listmenu {
+        margin: 5px 10px;
+    }
+   
+}
+
+@media only screen and (min-width: 310px) and (max-width: 330px) {
+    .sidebarmain ul{
+        padding-left: 0px;
+    }
+}
+
+.hamburger{
+    display: none;
+    position: absolute;
+    right: 5%;
+}
+
+@media screen and (max-width: 440px) {
+    .listul{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+}
+
+.fa-bars{
+    font-size: 22px;
+}
+.listToggle{
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 36px;
+    background-color: #cbcbcbf7;
+    height: 100vh;
+}

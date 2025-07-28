@@ -1,0 +1,244 @@
+.container_Resume {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.container{
+  margin-top: 5%;
+  box-shadow: 0px 1px 5px 3px;
+  background-image: url('../../public/images/bg3.png');
+}
+.resume_description {
+  height: 350px;
+}
+.aboutheading {
+  align-items: center;
+  text-align: center;
+}
+.newdiv {
+  display: flex;
+  width: 90%;
+ 
+  justify-content: space-around;
+  margin: 0px;
+}
+.resumeList {
+  display: flex;
+  height: 350px;
+}
+/* .list_Icon {
+  background-color: aqua;
+} */
+.resumeList ul {
+  list-style: none;
+  font-size: large;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.educationDiv {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.workhistory {
+  height: 100%;
+  display: none;
+}
+.skills {
+  height: 100%;
+  display: none;
+}
+.projectdetail {
+  height: 100%;
+  display: none;
+}
+
+.active {
+  /* display: none; */
+}
+.accordion{
+  display: none;
+}
+.pointdiv {
+  display: inline-flex;
+  border: 5px solid black;
+  border-radius: 52%;
+  height: 12px;
+  width: 12px;
+  margin-left: -9px;
+}
+
+.timeline-1 {
+  border-left: 3px solid #b565a7;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  padding: 10px;
+  list-style: none;
+  text-align: left;
+}
+
+.accordion{
+  margin: 9px 0px;
+}
+
+@media (max-width: 767px) {
+  .timeline-1 {
+    max-width: 98%;
+    padding: 25px;
+  }
+}
+
+.timeline-1 .event {
+  border-bottom: 1px dashed #000;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .timeline-1 .event {
+    padding-top: 30px;
+  }
+  
+}
+
+.timeline-1 .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline-1 .event:before,
+.timeline-1 .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline-1 .event:before {
+  left: -207px;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+
+@media (max-width: 767px) {
+  .timeline-1 .event:before {
+    left: 0px;
+    text-align: left;
+  }
+}
+
+.timeline-1 .event:after {
+  box-shadow: 0 0 0 3px #b565a7;
+  left: -16.8px;
+  background: #fff;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  content: "";
+  top: -9px;
+}
+
+@media (max-width: 767px) {
+  .timeline-1 .event:after {
+    left: -31.8px;
+  }
+}
+
+.qualification {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+
+.myqualipara {
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+ color: #343a40;
+}
+
+.newclass{
+  color: #343a40;
+}
+.light1{
+  color: #68717a;
+  font-weight: 100;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px){
+ 
+  .detailwrapper{
+    width: 50% !important;
+  }
+  .aboutdescription{
+    padding: 4% 0% !important;
+  }
+  .nameheading{
+    color: #343a40;
+  }
+  .developerh4{
+    color: #343a40;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 768px){
+  .accordion{
+    display: block;
+  }
+  .qualification{
+    display: none;
+  }
+  
+}
+@media only screen and (min-width: 420px) and (max-width: 430px){
+ 
+  .accordion{
+    display: block;
+  }
+  .qualification{
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 370px) and (max-width: 419px){
+  .accordion{
+    display: block;
+  }
+  .qualification{
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 315px) and (max-width: 330px){
+ 
+  .accordion{
+    display: block;
+  }
+  .qualification{
+    display: none !important;
+  }
+}
+
+.accordion-item:first-of-type .accordion-button, .collapsed,.accordion-body{
+  background-image: url('../../public/images/bg3.png');
+  background-size: cover;
+}
+.accordion-button{
+  padding: 10px;
+  z-index: 0 !important;
+}
+
+.accordion-item ,accordion-button, .collapsed{
+  background-color: transparent !important;
+}
